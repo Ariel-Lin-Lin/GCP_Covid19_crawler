@@ -14,7 +14,7 @@ https://datastudio.google.com/reporting/0fba186c-6215-4d7a-8aa8-8187a6e2be9e/pag
 2. 由於此資料是每日更新，相同欄位非常多，因此將原始資料相同欄位合併，變成可作圖的Tidy Data
 ##### 利用Cloud Storage將爬蟲程式的資料儲存至雲端
 
-'''
+""" 
 from google.cloud import storage
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
     storage_client = storage.Client()
@@ -26,5 +26,5 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
             source_file_name, destination_blob_name
         )
     )
-'''
+""" 
 
